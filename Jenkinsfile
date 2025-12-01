@@ -83,4 +83,4 @@ def configMap = [
 
 ]
 
-Pipeline(configMap)
+pipelineJava(configMap)
