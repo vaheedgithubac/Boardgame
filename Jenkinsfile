@@ -80,5 +80,5 @@ def configMap = [
     BCC_MAIL              = ""                                 // Defaults to null
     ATTACHMENTS           = ""                                 // Defaults to null  // "trivy-reports/*, owasp-reports/*, surefire-reports/*.xml"               
 ]
-pipelineJava_01
+pipelineJava_01(configMap)
 # pipelineJava(configMap)
