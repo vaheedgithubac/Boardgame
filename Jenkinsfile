@@ -11,8 +11,7 @@ def configMap = [
      MY_GIT_REPO_TYPE: "public",                        // required (public or private)
      MY_GIT_CREDENTIALS_ID: "",                         // required for private repos
      MY_GIT_BRANCH: "",                                 // Defaults to "main" if not set
-     //MY_GIT_LATEST_COMMIT_ID: get_latest_short_commit(),  // <-- calls call() from shared library
-
+     
                        // JACOCO Variables //
     EXECUTE_JACOCO_STAGE: "no",                       // required (yes/no)
     JACOCO_GROUPID: "org.jacoco",                     // required
