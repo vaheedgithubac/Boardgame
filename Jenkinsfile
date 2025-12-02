@@ -56,7 +56,7 @@ def configMap = [
     EXECUTE_ECR_PUSH_STAGE: "no",                       // required (yes/no)
     AWS_ACCOUNT_ID: "",                         // required
     REGION: "ap-south-1" ,              // Defaults to 'ap-south-1'
-    ECR_REPO_URI: "${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com",
+    // ECR_REPO_URI: "${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com",
     AWS_CREDENTIALS_ID: "aws-prod-creds",
 
                        // Nexus Variables //
