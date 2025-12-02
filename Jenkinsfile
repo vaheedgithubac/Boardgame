@@ -2,8 +2,8 @@
 
 def config = [
     // Project Variables
-    PROJECT_NAME: "myapp",  // required     
-    PROJECT_KEY: "myapp",   // required
+    PROJECT_NAME: "boardgame",  // required     
+    PROJECT_KEY: "boardgame",   // required
     COMPONENT: "backend",   // required
 
     // Git Variables
@@ -13,7 +13,7 @@ def config = [
     MY_GIT_BRANCH: "",            // Defaults to "main" if not set
 
     // JACOCO Variables
-    EXECUTE_JACOCO_STAGE: "no",                   // required (yes/no)
+    EXECUTE_JACOCO_STAGE: "yes",                   // required (yes/no)
     JACOCO_GROUPID: "org.jacoco",                 // required
     JACOCO_ARTIFACT_ID: "jacoco-maven-plugin",    // required
     JACOCO_VERSION: "0.8.7",                      // required
