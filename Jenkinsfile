@@ -37,7 +37,6 @@ def configMap = [
                        // TRIVY FS SCAN Variables //
     EXECUTE_TRIVY_FS_STAGE          = "no",                 // required (yes/no)
     FS_TARGET                       = "." ,                 // Defaults to "." (Current File System)
-    TRIVY_IMAGE_REPORT_FORMAT       = "html",               // required
     TRIVY_FILE_SYSTEM_REPORT_FORMAT = "html",               // required
 
                        // DOCKER BUILD Variables //
@@ -47,8 +46,7 @@ def configMap = [
     EXECUTE_TRIVY_IMAGE_STAGE       = "no",                 // required (yes/no)
     IMAGE_TARGET                    = "image",              // Defaults to "." (Current File System)
     TRIVY_IMAGE_REPORT_FORMAT       = "html",               // required
-    TRIVY_FILE_SYSTEM_REPORT_FORMAT = "html",               // required
-
+    
                        // DOCKER HUB Registry Variables //
     EXECUTE_DOCKER_HUB_PUSH_STAGE   = "no",                 // required (yes/no)
     DOCKER_REPO_URI                 = "docker.io",          // Defaults to 'docker.io'
