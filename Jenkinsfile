@@ -64,7 +64,7 @@ def configMap = [
     NEXUS_VERSION: 'nexus3',                // required
     NEXUS_BASE_REPO: 'vprofile',            // required
     NEXUS_GRP_ID: 'QA',                     // required
-    NEXUS_CREDENTIALS_ID: 'nexus-creds',    // required
+    NEXUS_CREDENTIALS_ID: '',               // required
 
     // EMAIL Variables
     EXECUTE_EMAIL_STAGE: "no",      // required (yes/no)
