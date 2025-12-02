@@ -88,5 +88,5 @@ def configMap = [
     ATTACHMENTS           = ""                                  // Defaults to null  // "trivy-reports/*, owasp-reports/*, surefire-reports/*.xml"               
 ]
 printVars(configMap)
-# PIPELINE_JAVA_01(configMap)
-# pipelineJava(configMap)
+// PIPELINE_JAVA_01(configMap)
+// pipelineJava(configMap)
