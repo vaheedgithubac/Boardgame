@@ -29,9 +29,10 @@ def config = [
     EXECUTE_SONAR_QG_STAGE: "no",   // required (yes/no)
 
     // TRIVY FS SCAN Variables
-    EXECUTE_TRIVY_FS_STAGE: "yes",             // required (yes/no)
+    EXECUTE_TRIVY_FS_STAGE: "yes",            // required (yes/no)
     FS_TARGET: ".",                           // Defaults to "." (Current File System)
-    TRIVY_FILE_SYSTEM_REPORT_FORMAT: "table",  // required
+    TRIVY_FS_SCAN_FORMAT: "table",                 // required
+    TRIVY_FS_OUTPUT_FORMAT: "txt",            // required 
 
     // MAVEN Variables
     EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
@@ -42,8 +43,9 @@ def config = [
     EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "no",   // required (yes/no)
 
     // TRIVY IMAGE SCAN Variables
-    EXECUTE_TRIVY_IMAGE_STAGE: "no",    // required (yes/no)
-    TRIVY_IMAGE_REPORT_FORMAT: "html",  // required 
+    EXECUTE_TRIVY_IMAGE_STAGE: "no",            // required (yes/no)
+    TRIVY_IMAGE_SCAN_FORMAT: "table",           // required
+    TRIVY_IMAGE_OUTPUT_FORMAT: "txt",           // required 
 
     // DOCKER HUB Registry Variables
     EXECUTE_DOCKER_HUB_PUSH_STAGE: "no",              // required (yes/no)
