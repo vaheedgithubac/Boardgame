@@ -1,6 +1,6 @@
 @Library('Jenkins-Shared-Library-03') _
 
-def configMap = [
+def config = [
     // Project Variables
     PROJECT_NAME: "myapp",  // required     
     PROJECT_KEY: "myapp",   // required
@@ -77,16 +77,16 @@ def configMap = [
 ]
 
 // Compute derived Nexus repos
-configMap.NEXUS_SNAP_REPO    = "${configMap.NEXUS_BASE_REPO}-SNAPSHOT"
-configMap.NEXUS_RELEASE_REPO = "${configMap.NEXUS_BASE_REPO}-RELEASE"
-configMap.NEXUS_GRP_REPO     = "${configMap.NEXUS_BASE_REPO}-maven-group"
+config.NEXUS_SNAP_REPO    = "${config.NEXUS_BASE_REPO}-SNAPSHOT"
+config.NEXUS_RELEASE_REPO = "${config.NEXUS_BASE_REPO}-RELEASE"
+config.NEXUS_GRP_REPO     = "${config.NEXUS_BASE_REPO}-maven-group"
 
 // Compute ECR repo
-configMap.ECR_REPO_URI = "${configMap.AWS_ACCOUNT_ID}.dkr.ecr.${configMap.REGION}.amazonaws.com"
+config.ECR_REPO_URI = "${config.AWS_ACCOUNT_ID}.dkr.ecr.${config.REGION}.amazonaws.com"
 
 // Call pipeline
-PIPELINE_JAVA(configMap)
+PIPELINE_JAVA(config)
 
 
 // printVars(configMap)
-//PIPELINE_JAVA_01(configMap)
+//PIPELINE_JAVA_01(config)
