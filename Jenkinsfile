@@ -46,7 +46,7 @@ def configMap = [
                        // TRIVY IMAGE SCAN Variables //
     EXECUTE_TRIVY_IMAGE_STAGE       = "no",                 // required (yes/no)
     FS_TARGET                       = ".",                  // Defaults to "." (Current File System)
-    TRIVY_IMAGE_REPORT_FORMAT       = "html"                // required
+    TRIVY_IMAGE_REPORT_FORMAT       = "html",                // required
     TRIVY_FILE_SYSTEM_REPORT_FORMAT = "html",               // required
 
                        // DOCKER HUB Registry Variables //
