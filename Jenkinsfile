@@ -23,7 +23,7 @@ def configMap = [
                       // SONARQUBE SCAN Variables //
     EXECUTE_SONARSCAN_STAGE   = "no",                       // required (yes/no)
     SONARQUBEAPI              = "sonarqube-server",         // required
-    SCANNER_HOME              = "${tool 'sonarscanner'}",   // required
+    // SCANNER_HOME              = "${tool 'sonarscanner'}",   // required
     TIMEOUT_MINUTES           = 5,                          // For Sonarqube Quality gate (Default is 5 Minutes)
 
                       // SONAR QG Variables //
@@ -45,8 +45,8 @@ def configMap = [
 
                        // TRIVY IMAGE SCAN Variables //
     EXECUTE_TRIVY_IMAGE_STAGE       = "no",                 // required (yes/no)
-    FS_TARGET                       = ".",                  // Defaults to "." (Current File System)
-    TRIVY_IMAGE_REPORT_FORMAT       = "html",                // required
+    IMAGE_TARGET                    = "image",              // Defaults to "." (Current File System)
+    TRIVY_IMAGE_REPORT_FORMAT       = "html",               // required
     TRIVY_FILE_SYSTEM_REPORT_FORMAT = "html",               // required
 
                        // DOCKER HUB Registry Variables //
@@ -75,8 +75,8 @@ def configMap = [
 
     NEXUS_GRP_ID          = 'QA',                               // required
     NEXUS_CREDENTIALS_ID  = 'nexus-creds',                      // required
-    NEXUS_CREDENTIALS     = credentials('nexus-creds'),         // required
-    NEXUS_ARTIFACT_VERSION = "${BUILD_ID}-${BUILD_TIMESTAMP}",  // Requires "Build Timestamp" plugin
+    // NEXUS_CREDENTIALS     = credentials('nexus-creds'),         // required
+    // NEXUS_ARTIFACT_VERSION = "${BUILD_ID}-${BUILD_TIMESTAMP}",  // Requires "Build Timestamp" plugin
 
                        // EMAIL Variables //
     EXECUTE_EMAIL_STAGE   = "no",                               // required (yes/no)
