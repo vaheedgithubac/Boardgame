@@ -34,7 +34,7 @@ def config = [
     MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
 
     // TRIVY FS SCAN Variables
-    EXECUTE_TRIVY_FS_STAGE: "no",             // required (yes/no)
+    EXECUTE_TRIVY_FS_STAGE: "yes",             // required (yes/no)
     FS_TARGET: ".",                           // Defaults to "." (Current File System)
     TRIVY_FILE_SYSTEM_REPORT_FORMAT: "html",  // required
 
