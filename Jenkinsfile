@@ -28,15 +28,15 @@ def config = [
     // SONAR QG Variables
     EXECUTE_SONAR_QG_STAGE: "no",   // required (yes/no)
 
-    // MAVEN Variables
-    EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
-    MAVEN_SKIP_TESTS: true,         // Defaults to 'true'
-    MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
-
     // TRIVY FS SCAN Variables
     EXECUTE_TRIVY_FS_STAGE: "yes",             // required (yes/no)
     FS_TARGET: ".",                           // Defaults to "." (Current File System)
     TRIVY_FILE_SYSTEM_REPORT_FORMAT: "table",  // required
+
+    // MAVEN Variables
+    EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
+    MAVEN_SKIP_TESTS: true,         // Defaults to 'true'
+    MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
 
     // DOCKER BUILD Variables
     EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "no",   // required (yes/no)
