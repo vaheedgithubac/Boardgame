@@ -36,7 +36,7 @@ def config = [
     // TRIVY FS SCAN Variables
     EXECUTE_TRIVY_FS_STAGE: "yes",             // required (yes/no)
     FS_TARGET: ".",                           // Defaults to "." (Current File System)
-    TRIVY_FILE_SYSTEM_REPORT_FORMAT: "html",  // required
+    TRIVY_FILE_SYSTEM_REPORT_FORMAT: "table",  // required
 
     // DOCKER BUILD Variables
     EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "no",   // required (yes/no)
