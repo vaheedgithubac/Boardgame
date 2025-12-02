@@ -2,9 +2,9 @@
 
 def configMap = [
                        // Project Variables //
-    PROJECT_NAME: "myapp",                    // required
-    PROJECT_KEY: "myapp",                     // required
-    COMPONENT: "backend",                     // required
+     PROJECT_NAME: "myapp",                    // required
+     PROJECT_KEY: "myapp",                     // required
+     COMPONENT: "backend",                     // required
 
                        // Git Variables //
      MY_GIT_URL: "https://github.com/vaheedgithubac/Boardgame.git",
