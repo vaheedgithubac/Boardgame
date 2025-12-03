@@ -48,7 +48,7 @@ def config = [
     TRIVY_IMAGE_OUTPUT_FORMAT: "txt",           // required 
 
     // DOCKER HUB Registry Variables
-    EXECUTE_DOCKER_HUB_PUSH_STAGE: "no",              // required (yes/no)
+    EXECUTE_DOCKER_HUB_PUSH_STAGE: "yes",              // required (yes/no)
     DOCKER_REPO_URI: "docker.io",                     // Defaults to 'docker.io'
     DOCKER_HUB_CREDENTIALS_ID: "docker-prod-creds",   // required 
 
