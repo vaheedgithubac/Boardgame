@@ -35,7 +35,7 @@ def config = [
     TRIVY_FS_OUTPUT_FORMAT: "txt",            // required 
 
     // MAVEN Variables
-    EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
+    EXECUTE_MAVEN_STAGE: "yes",      // required (yes/no)
     MAVEN_SKIP_TESTS: true,         // Defaults to 'true'
     MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
 
