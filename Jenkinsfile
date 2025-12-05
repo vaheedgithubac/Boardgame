@@ -7,13 +7,14 @@ def config = [
     COMPONENT: "backend",   // required
 
     // Git Variables
+    EXECUTE_GITCHECKOUT_STAGE: "yes"
     MY_GIT_URL: "https://github.com/vaheedgithubac/Boardgame.git", // required
     MY_GIT_REPO_TYPE: "public",   // required (public/private)
     MY_GIT_CREDENTIALS_ID: "",    // required for private repos
     MY_GIT_BRANCH: "",            // Defaults to "main" if not set
 
     // JACOCO Variables
-    EXECUTE_JACOCO_STAGE: "yes",                   // required (yes/no)
+    EXECUTE_JACOCO_STAGE: "no",                   // required (yes/no)
     JACOCO_GROUPID: "org.jacoco",                 // required
     JACOCO_ARTIFACT_ID: "jacoco-maven-plugin",    // required
     JACOCO_VERSION: "0.8.7",                      // required
@@ -29,26 +30,26 @@ def config = [
     EXECUTE_SONAR_QG_STAGE: "no",   // required (yes/no)
 
     // TRIVY FS SCAN Variables
-    EXECUTE_TRIVY_FS_STAGE: "yes",            // required (yes/no)
+    EXECUTE_TRIVY_FS_STAGE: "no",            // required (yes/no)
     TRIVY_FS_TARGET: ".",                     // Defaults to "." (Current File System)
     TRIVY_FS_SCAN_FORMAT: "table",            // required
     TRIVY_FS_OUTPUT_FORMAT: "txt",            // required 
 
     // MAVEN Variables
-    EXECUTE_MAVEN_STAGE: "yes",      // required (yes/no)
+    EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
     MAVEN_SKIP_TESTS: true,         // Defaults to 'true'
     MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
 
     // DOCKER BUILD Variables
-    EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "yes",   // required (yes/no)
+    EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "no",   // required (yes/no)
 
     // TRIVY IMAGE SCAN Variables
-    EXECUTE_TRIVY_IMAGE_STAGE: "yes",            // required (yes/no)
+    EXECUTE_TRIVY_IMAGE_STAGE: "no",            // required (yes/no)
     TRIVY_IMAGE_SCAN_FORMAT: "table",           // required
     TRIVY_IMAGE_OUTPUT_FORMAT: "txt",           // required 
 
     // DOCKER HUB Registry Variables
-    EXECUTE_DOCKER_HUB_PUSH_STAGE: "yes",              // required (yes/no)
+    EXECUTE_DOCKER_HUB_PUSH_STAGE: "no",              // required (yes/no)
     DOCKER_REPO_URI: "docker.io",                     // Defaults to 'docker.io'
     DOCKER_HUB_CREDENTIALS_ID: "docker-prod-creds",   // required 
 
