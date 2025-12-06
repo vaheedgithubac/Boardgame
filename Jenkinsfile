@@ -22,9 +22,9 @@ def config = [
 
     // SONARQUBE SCAN Variables
     EXECUTE_SONARSCAN_STAGE: "no",        // required (yes/no)
-    SONARQUBEAPI: "sonarqube-server",     // required 
-    SONAR_INSTALL_NAME: "sonarscanner",   // required
-    TIMEOUT_MINUTES: 5,                   // For Sonarqube Quality gate (Default is 5 Minutes)
+    SONARQUBE_SERVER: "sonarqube-server",     // required 
+    SONAR_SCANNER_NAME: "sonarscanner",       // required
+    TIMEOUT_MINUTES: 5,                       // For Sonarqube Quality gate (Default is 5 Minutes)
 
     // SONAR QG Variables
     EXECUTE_SONAR_QG_STAGE: "no",   // required (yes/no)
