@@ -85,7 +85,7 @@ config.NEXUS_RELEASE_REPO = "${config.NEXUS_BASE_REPO}-RELEASE"
 config.NEXUS_GRP_REPO     = "${config.NEXUS_BASE_REPO}-maven-group"
 
 // Compute ECR repo
-config.ECR_REPO_URI = "${config.AWS_ACCOUNT_ID}.dkr.ecr.${config.REGION}.amazonaws.com"
+config.ECR_REGISTRY_URI = "${config.AWS_ACCOUNT_ID}.dkr.ecr.${config.REGION}.amazonaws.com"
 
 // Call pipeline
 PIPELINE_JAVA(config)
