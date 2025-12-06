@@ -38,7 +38,7 @@ def config = [
 
     // MAVEN Variables
     EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
-    MAVEN_SKIP_TESTS: true,         // Defaults to 'true'
+    MAVEN_SKIP_TESTS: "true",         // Defaults to 'true'
     MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
 
     // DOCKER BUILD Variables
