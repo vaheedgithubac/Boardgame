@@ -67,7 +67,7 @@ def config = [
     NEXUS_PORT: '8081',                     // required
     NEXUS_PROTOCOL: 'http',                 // required
     NEXUS_VERSION: 'nexus3',                // required
-    NEXUS_BASE_REPO: 'vprofile',            // required
+    NEXUS_BASE_REPO: 'board',            // required
     NEXUS_GRP_ID: 'QA',                     // required
     NEXUS_CREDENTIALS_ID: '',               // required
 
