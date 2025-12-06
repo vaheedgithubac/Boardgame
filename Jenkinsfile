@@ -20,15 +20,6 @@ def config = [
     JACOCO_VERSION: "0.8.7",                      // required
     JACOCO_GOAL: "prepare-agent",                 // required
 
-    // SONARQUBE SCAN Variables
-    EXECUTE_SONARSCAN_STAGE: "no",        // required (yes/no)
-    SONARQUBE_SERVER: "sonarqube-server",     // required 
-    SONAR_SCANNER_NAME: "sonarscanner",       // required
-    TIMEOUT_MINUTES: 5,                       // For Sonarqube Quality gate (Default is 5 Minutes)
-
-    // SONAR QG Variables
-    EXECUTE_SONAR_QG_STAGE: "no",   // required (yes/no)
-
     // TRIVY FS SCAN Variables
     EXECUTE_TRIVY_FS_STAGE: "no",             // required (yes/no)
     TRIVY_FS_TARGET: ".",                     // Defaults to "." (Current File System)
@@ -36,6 +27,15 @@ def config = [
     TRIVY_FS_OUTPUT_FORMAT: "txt",            // required 
     TRIVY_FS_SEVERITY: "HIGH,MEDIUM,LOW"      // Default to "HIGH,MEDIUM,LOW"
 
+    // SONARQUBE SCAN Variables
+    EXECUTE_SONARSCAN_STAGE: "no",        // required (yes/no)
+    SONARQUBE_SERVER: "sonarqube-server",     // required 
+    SONAR_SCANNER_NAME: "sonarscanner",       // required
+    
+    // SONAR QG Variables
+    EXECUTE_SONAR_QG_STAGE: "no",   // required (yes/no)
+    TIMEOUT_MINUTES: 5,             // For Sonarqube Quality gate (Default is 5 Minutes)
+    
     // MAVEN Variables
     EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
     MAVEN_SKIP_TESTS: "true",         // Defaults to 'true'
