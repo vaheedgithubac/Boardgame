@@ -48,7 +48,7 @@ def config = [
     EXECUTE_TRIVY_IMAGE_STAGE: "no",            // required (yes/no)
     TRIVY_IMAGE_SCAN_FORMAT: "table",           // required
     TRIVY_IMAGE_OUTPUT_FORMAT: "txt",           // required 
-    TRIVY_IMAGE_SEVERITY: "HIGH,MEDIUM,LOW"     // Default to "HIGH,MEDIUM,LOW"
+    TRIVY_IMAGE_SEVERITY: "HIGH,MEDIUM,LOW",     // Default to "HIGH,MEDIUM,LOW"
 
     // DOCKER HUB Registry Variables
     EXECUTE_DOCKER_HUB_PUSH_STAGE: "no",              // required (yes/no)
