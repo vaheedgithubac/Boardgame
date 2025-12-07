@@ -42,7 +42,7 @@ def config = [
     MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
 
     // DOCKER BUILD Variables
-    EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "no",   // required (yes/no)
+    EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "yes",   // required (yes/no)
 
     // TRIVY IMAGE SCAN Variables
     EXECUTE_TRIVY_IMAGE_STAGE: "no",            // required (yes/no)
