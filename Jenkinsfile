@@ -21,7 +21,7 @@ def config = [
     JACOCO_GOAL: "prepare-agent",                 // required
 
     // TRIVY FS SCAN Variables
-    EXECUTE_TRIVY_FS_STAGE: "no",             // required (yes/no)
+    EXECUTE_TRIVY_FS_STAGE: "yes",             // required (yes/no)
     TRIVY_FS_TARGET: ".",                     // Defaults to "." (Current File System)
     TRIVY_FS_SCAN_FORMAT: "table",            // required
     TRIVY_FS_OUTPUT_FORMAT: "txt",            // required 
