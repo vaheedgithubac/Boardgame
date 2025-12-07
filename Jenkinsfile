@@ -14,7 +14,7 @@ def config = [
     MY_GIT_BRANCH: "",            // Defaults to "main" if not set
 
     // JACOCO Variables
-    EXECUTE_JACOCO_STAGE: "no",                   // required (yes/no)
+    EXECUTE_JACOCO_STAGE: "yes",                   // required (yes/no)
     JACOCO_GROUPID: "org.jacoco",                 // required
     JACOCO_ARTIFACT_ID: "jacoco-maven-plugin",    // required
     JACOCO_VERSION: "0.8.7",                      // required
