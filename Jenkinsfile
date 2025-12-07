@@ -37,7 +37,7 @@ def config = [
     TIMEOUT_MINUTES: 5,             // For Sonarqube Quality gate (Default is 5 Minutes)
     
     // MAVEN Variables
-    EXECUTE_MAVEN_STAGE: "no",      // required (yes/no)
+    EXECUTE_MAVEN_STAGE: "yes",      // required (yes/no)
     MAVEN_SKIP_TESTS: "true",         // Defaults to 'true'
     MAVEN_GOALS: "clean package",   // Defaults to 'clean package'
 
