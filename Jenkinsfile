@@ -45,7 +45,7 @@ def config = [
     EXECUTE_DOCKER_IMAGE_BUILD_STAGE: "yes",   // required (yes/no)
 
     // TRIVY IMAGE SCAN Variables
-    EXECUTE_TRIVY_IMAGE_STAGE: "no",            // required (yes/no)
+    EXECUTE_TRIVY_IMAGE_STAGE: "yes",            // required (yes/no)
     TRIVY_IMAGE_SCAN_FORMAT: "table",           // required
     TRIVY_IMAGE_OUTPUT_FORMAT: "txt",           // required 
     TRIVY_IMAGE_SEVERITY: "HIGH,MEDIUM,LOW",     // Default to "HIGH,MEDIUM,LOW"
