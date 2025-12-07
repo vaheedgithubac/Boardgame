@@ -25,7 +25,7 @@ def config = [
     TRIVY_FS_TARGET: ".",                     // Defaults to "." (Current File System)
     TRIVY_FS_SCAN_FORMAT: "table",            // required
     TRIVY_FS_OUTPUT_FORMAT: "txt",            // required 
-    TRIVY_FS_SEVERITY: "HIGH,MEDIUM,LOW"      // Default to "HIGH,MEDIUM,LOW"
+    TRIVY_FS_SEVERITY: "HIGH,MEDIUM,LOW",      // Default to "HIGH,MEDIUM,LOW"
 
     // SONARQUBE SCAN Variables
     EXECUTE_SONARSCAN_STAGE: "no",        // required (yes/no)
