@@ -7,7 +7,7 @@ def config = [
     COMPONENT: "backend",   // required
 
     // Git Variables
-    EXECUTE_GITCHECKOUT_STAGE: "yes"
+    EXECUTE_GITCHECKOUT_STAGE: "yes",
     MY_GIT_URL: "https://github.com/vaheedgithubac/Boardgame.git", // required
     MY_GIT_REPO_TYPE: "public",   // required (public/private)
     MY_GIT_CREDENTIALS_ID: "",    // required for private repos
